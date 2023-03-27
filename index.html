@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<head>
+    <title> Assignment 1 Alicia Suharly s3927813 </title>
+    <meta name="viewport" content="width:device-width", initial-scale="1.0">
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.0/buzz.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Tangerine:wght@700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Allura&family=Meie+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Upright:wght@500&family=Press+Start+2P&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Syne:wght@600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Silkscreen&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,700;1,700&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=MuseoModerno:ital,wght@0,600;1,500&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Righteous&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ultra&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body>
+    <script>
+        $(window).scroll(function () {
+
+            // selectors
+            var $window = $(window),
+                $body = $('body'),
+                $panel = $('.panel');
+
+            var scroll = $window.scrollTop() + ($window.height() / 3);
+
+            $panel.each(function () {
+                var $this = $(this);
+
+                
+                if ($this.position().top <= scroll && $this.position().top + $this.height() > scroll) {
+
+                    // Remove all classes on body color
+                    $body.removeClass(function (index, css) {
+                        return (css.match(/(^|\s)color-\S+/g) || []).join(' ');
+                    });
+
+                    // Add class?
+                    $body.addClass('color-' + $(this).data('color'));
+                }
+            });
+
+        }).scroll();
+    </script>
+
+
+
+    <div class="panel" data-color="white">
+        <div>
+            <p class="marquee" id="heading">
+                <span><img src="img/marquee.png" height="200px" alt="marquee"></span>
+                <span><img src="img/marquee.png" height="200px" alt="marquee"></span>
+                <span><img src="img/marquee.png" height="200px" alt="marquee"></span>
+                <span><img src="img/marquee.png" height="200px" alt="marquee"></span>
+                <span><img src="img/marquee.png" height="200px" alt="marquee"></span>
+            </p>
+
+            <h1 style="font-size:6vw">WELCOME TO ALICIA'S ASSIGNMENT 1 </h1>
+            <p class="marquee">
+                <span><img src="img/marquee.png" height="200px" alt="marquee"></span>
+                <span><img src="img/marquee.png" height="200px" alt="marquee"></span>
+                <span><img src="img/marquee.png" height="200px" alt="marquee"></span>
+                <span><img src="img/marquee.png" height="200px" alt="marquee"></span>
+                <span><img src="img/marquee.png" height="200px" alt="marquee"></span>
+            </p>
+            <br><br><br><br><br><br><br><br>
+    
+            <div class="panel" data-color="green">
+
+               
+                    <h2> Questions </h2>
+                    <br><br><br><br><br><br><br><br>
+    
+                    <p style="text-align:center"> <a href="https://s3927813.github.io/s3927813/"> Click To Open Justine's 7 Poems Site </a></p>
+                
+                        <div class="center"><img style="justify-content: center;" width="80%"></div><br><br>
+                        <p>1) What was the first thing you paid attention to when interacting with the experience? <br><br>
+                            <p>The first thing I paid attention to about the web is the title popping up before zooming out and revealing the 7 vertical rectangles. I immediately noticed how unexpected the animations are and I feel like it’s curated to make u not expect whatever happens next, as I keep getting surprised by every click in this interaction. Other than that, I also noticed how each poem emits its own sound with different tunes that repeat with the word.
+                            <br><br>2) Spend two minutes with the experience and create a list of each of your discrete actions.<br><br></p>
+                            <ul>After I spent two minutes with the experience, I find that there are a few discrete actions I do repeatedly: </ul>
+                            <li>Clicking on (opening) all the poems</li>
+                            <li>Clicking on (opening) only one of the poems</li>
+                            <li> Restarting all of the poems by clicking on the title</li>
+                            <li>Trying to read all of the poems at the same time</li>
+                            <li>Pausing the poem by clicking on them</li>
+                            <li>Muting and turning the sound back on because of how dizzy it made me feel</li>
+                            </p>
+                            <p><br><br> 3) What part of the experience did you spend the most time engaging with?<br><br>
+                            I spent most of my time playing and pausing the poems. At first, I did not realize I can pause the individual poems, but after clicking on the each of them, I realized that feature and I started pausing and playing them plenty of times.
+                            <br><br>4) What was the most common action in your two minute interaction with the experience?<br><br>
+                            My most common action in two-minute interaction time is clicking on all the poems so that they play at once. While they’re playing, they also emit a sound which if played together simultaneously, creates a piercing ‘harmony’. It is dizzying but also somehow satisfying at the same time.
+                            <br><br> 5) What is your impression of the intended primary goal of the interactive  experience?<br><br>
+                            Even after plenty of time interacting with ‘7 Poems’, I struggled to find the true primary goal of this work. I tried reloading the page several times to re-experience the website from its initial landing page, and after some time playing with the website, I concluded within myself that this interactive experience acts as an interactive artwork to display poems in a digitalized manner. Combining web and sound design to transform poems and poetry into an interesting digital experience. Through this website, I find myself interacting and being drawn to poetry more. Although the poem itself is not very easy to read whilst playing alongside other poems, I feel like I am more interested in interacting with them than I do with regular poems.
+                            
+                            <br><br>6) What is your impression of how the interactive experience communicates its primary goal?<br><br>
+                            Although I had some struggles translating it, the interactive experience actually communicate its primary goal really well. All the elements work well together to focus viewers’ attention on the poem itself. How the audio is designed also contributes to attracting attention to every word of the poem, as it repeats itself with the words.
+                            <br><br> 7) What is your impression of how the experience should be interacted with over time? (For how long and how many different times)<br><br>
+                            I think the experience should be interacted with for at least 15 minutes or more. I think viewers should pause and play the poems a few different times to be able to read and engage with them one by one. It’s also nice to pause and play the poems in various sequences and together at the same time to experience certain feelings this website evokes.
+                            <br><br>8) What is your impression of how the interactive experience communicates how it should be interacted with over time?<br><br>
+                            The website allows viewers to interact with it in their own pace and figure out all detailed features on their own. I appreciate this because the creator makes it very obvious on where to click and what to click to interact with the web. This allows viewers to experience the website with freedom whilst making sure they get to every element in this experience.
+                            <br><br>9) What other media forms (digital or otherwise) does the experience reference?<br><br>
+                            Justine’s website experience, titled ‘7 Poems’ tells a lot about the media forms it referenced. This experience contains poems and poetry, combined with audio design. In a way I also feel like this experience reminds me of reading a book word by word, while listening to the radio or music.
+                            <br><br>10) What does this reference or references suggest to you about how you should act when engaging with it?<br><br>
+                            According to the way the website is designed, the way I intrepet Justine's intention is to make the viewers focus on the poem itself if only one of them is played, and to create a harmony when all of the poems are played together tied by the harmony of the sound design.
+                            
+                            
+                            <br><br>11) What does this reference or references suggest to you about how you should feel when engaging with it?<br><br>
+                            From the way the website is designed, i feel like they are trying to immerse viewers with the sounds and poems so we can interpret the poems better, or to evoke certain feelings in us whether it be tranquil or disturbance. Personally, I feel that the audio played with the poems makes me calm, even though I get overwhelmed and dizzy if I play all of the poems at the same time.
+                            <br><br>12) What is the most frustrating element of the interaction to you and what makes it frustrating?<br><br>
+                            The most frustrating element of the experience for me is the sound design. Although it is the element that is the most lingering and noticeable from the whole interaction, sometimes I find myself muting the website just because the different sounds from the different poems hurt my brain when I play them at the same time (which I tend to do a lot).
+                            <br><br>13) What is the most satisfying element of the interaction to you and what makes it satisfying?<br><br>
+                            The most relaxing part of the website for me is the sound design of the poems only when its played by its own one by one. I also like the way the text shifted word by word, and although sometimes I find it difficult to read, I feel like the words enter my brain in the way I usually read a book (getting through the words one by one) and makes me feel nostalgic. Although, if played along with the audio, I kinda get creeped out because it transform this physical art form I’m used to (regular poem or a book) into an AI digital vibe with how the sounds were designed.
+                            
+                        </p><br>
